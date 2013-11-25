@@ -57,4 +57,15 @@
     return closestColor;
 }
 
+- (BOOL)getObjectValue:(out __autoreleasing id *)obj forString:(NSString *)string errorDescription:(out NSString *__autoreleasing *)error;
+{
+    [self.colors enumerateKeysAndObjectsUsingBlock:^(UIColor *color, NSString *name, BOOL *stop) {
+        if([name isEqualToString:string]) {
+            *obj = color;
+            *stop = YES;
+        }
+    }];
+    return YES;
+}
+
 @end

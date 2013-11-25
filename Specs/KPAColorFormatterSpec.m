@@ -26,6 +26,13 @@ describe(@"KPAColorFormatter", ^{
     it(@"can find the closest color match", ^{
         expect([_formatter stringForObjectValue:[UIColor colorWithRed:0.9 green:0.5 blue:0.5 alpha:1.0]]).to.equal(@"Red");
     });
+
+    it(@"can format known color names into UIColor instances", ^{
+        UIColor *color = nil;
+        BOOL didSucceed = [_formatter getObjectValue:&color forString:@"Blue" errorDescription:nil];
+        expect(didSucceed).to.beTruthy();
+        expect(color).to.equal([UIColor blueColor]);
+    });
 });
 
 SpecEnd
