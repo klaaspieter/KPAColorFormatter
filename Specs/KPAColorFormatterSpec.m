@@ -44,6 +44,12 @@ describe(@"KPAColorFormatter", ^{
         expect(color).to.beNil();
         expect(error).toNot.beEmpty();
     });
+
+    it(@"doesn't attempt to set the error if none is given", ^{
+        // Will crash with EXC_BAD_ACCESS on failure
+        UIColor *color = nil;
+        [_formatter getObjectValue:&color forString:@"Space Gray" errorDescription:nil];
+    });
 });
 
 SpecEnd

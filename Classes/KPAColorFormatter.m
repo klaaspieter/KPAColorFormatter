@@ -70,10 +70,11 @@
     if (matchingColor) {
         *obj = matchingColor;
         return YES;
-    } else {
+    } else if (error) {
         *error = [NSString stringWithFormat:@"No known color for name: %@", string];
-        return NO;
     }
+
+    return NO;
 }
 
 @end
