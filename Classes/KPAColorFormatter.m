@@ -22,6 +22,10 @@
 
 - (NSString *)stringForObjectValue:(id)value;
 {
+    if (![value isKindOfClass:[UIColor class]]) {
+        return nil;
+    }
+
     return [self.colors objectForKey:value];
 }
 
