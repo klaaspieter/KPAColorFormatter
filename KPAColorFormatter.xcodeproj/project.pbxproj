@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		4012258D9F344785AEC0E949 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3887EA99AF4C49AAA756191F /* libPods-Specs.a */; };
+		A108247D1843FE460016FABD /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
 		A11ACE7218400B90009D01B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7118400B90009D01B4 /* Foundation.framework */; };
 		A11ACE9C18400BA7009D01B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7F18400B90009D01B4 /* XCTest.framework */; };
 		A11ACE9D18400BA7009D01B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7118400B90009D01B4 /* Foundation.framework */; };
 		A11ACE9E18400BA7009D01B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE8218400B90009D01B4 /* UIKit.framework */; };
 		A11ACEA418400BA7009D01B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A11ACEA218400BA7009D01B4 /* InfoPlist.strings */; };
+		A11ACEB618400DF9009D01B4 /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
+		A11ACEB818400E02009D01B4 /* KPAColorFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB718400E02009D01B4 /* KPAColorFormatterSpec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +53,9 @@
 		A11ACEA718400BA7009D01B4 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
 		A11ACEAD18400C88009D01B4 /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
 		A11ACEB318400DD4009D01B4 /* KPAColorFormatter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KPAColorFormatter-Prefix.pch"; path = "Classes/KPAColorFormatter-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		A11ACEB418400DF9009D01B4 /* KPAColorFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAColorFormatter.h; sourceTree = "<group>"; };
+		A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatter.m; sourceTree = "<group>"; };
+		A11ACEB718400E02009D01B4 /* KPAColorFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatterSpec.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				A11ACEA018400BA7009D01B4 /* Supporting Files */,
+				A11ACEB718400E02009D01B4 /* KPAColorFormatterSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -138,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				A11ACE7418400B90009D01B4 /* Supporting Files */,
+				A11ACEB418400DF9009D01B4 /* KPAColorFormatter.h */,
+				A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -263,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11ACEB618400DF9009D01B4 /* KPAColorFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +280,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A11ACEB818400E02009D01B4 /* KPAColorFormatterSpec.m in Sources */,
+				A108247D1843FE460016FABD /* KPAColorFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
