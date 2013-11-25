@@ -59,13 +59,21 @@
 
 - (BOOL)getObjectValue:(out __autoreleasing id *)obj forString:(NSString *)string errorDescription:(out NSString *__autoreleasing *)error;
 {
+    __block UIColor *matchingColor = nil;
     [self.colors enumerateKeysAndObjectsUsingBlock:^(UIColor *color, NSString *name, BOOL *stop) {
         if([name isEqualToString:string]) {
-            *obj = color;
+            matchingColor = color;
             *stop = YES;
         }
     }];
-    return YES;
+
+    if (matchingColor) {
+        *obj = matchingColor;
+        return YES;
+    } else {
+        *error = [NSString stringWithFormat:@"No known color for name: %@", string];
+        return NO;
+    }
 }
 
 @end

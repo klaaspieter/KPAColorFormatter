@@ -29,9 +29,20 @@ describe(@"KPAColorFormatter", ^{
 
     it(@"can format known color names into UIColor instances", ^{
         UIColor *color = nil;
-        BOOL didSucceed = [_formatter getObjectValue:&color forString:@"Blue" errorDescription:nil];
+        NSString *error = nil;
+        BOOL didSucceed = [_formatter getObjectValue:&color forString:@"Blue" errorDescription:&error];
         expect(didSucceed).to.beTruthy();
         expect(color).to.equal([UIColor blueColor]);
+        expect(error).to.beNil();
+    });
+
+    it(@"returns an error by reference if no color can be found for the name", ^{
+        UIColor *color = nil;
+        NSString *error = nil;
+        BOOL didSucceed = [_formatter getObjectValue:&color forString:@"Space Gray" errorDescription:&error];
+        expect(didSucceed).to.beFalsy();
+        expect(color).to.beNil();
+        expect(error).toNot.beEmpty();
     });
 });
 
