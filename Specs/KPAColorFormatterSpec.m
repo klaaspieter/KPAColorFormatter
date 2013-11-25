@@ -22,6 +22,10 @@ describe(@"KPAColorFormatter", ^{
     it(@"can name exact color matches", ^{
         expect([_formatter stringForObjectValue:[UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:1.0]]).to.equal(@"Blue");
     });
+
+    it(@"can find the closest color match", ^{
+        expect([_formatter stringForObjectValue:[UIColor colorWithRed:0.9 green:0.5 blue:0.5 alpha:1.0]]).to.equal(@"Red");
+    });
 });
 
 SpecEnd
