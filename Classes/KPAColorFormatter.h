@@ -10,6 +10,8 @@
 
 @interface KPAColorFormatter : NSFormatter
 
+@property (nonatomic, readwrite, strong) NSLocale *locale;
+
 @property (nonatomic, readwrite, copy) NSDictionary *colors;
 
 - (id)initWithColors:(NSDictionary *)colors;

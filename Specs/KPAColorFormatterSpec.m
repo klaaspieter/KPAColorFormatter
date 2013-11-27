@@ -15,6 +15,10 @@ describe(@"KPAColorFormatter", ^{
         }];
     });
 
+    it(@"uses the current locale by default", ^{
+        expect(_formatter.locale).to.equal([NSLocale currentLocale]);
+    });
+
     it(@"only formats UIColor", ^{
         expect([_formatter stringForObjectValue:[[NSObject alloc] init]]).to.beNil();
     });

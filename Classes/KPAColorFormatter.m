@@ -77,4 +77,13 @@
     return NO;
 }
 
+- (NSLocale *)locale;
+{
+    if (!_locale) {
+        _locale = [NSLocale currentLocale];
+    }
+
+    return _locale;
+}
+
 @end
