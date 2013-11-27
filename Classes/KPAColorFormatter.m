@@ -10,6 +10,15 @@
 
 @implementation KPAColorFormatter
 
+- (id)init;
+{
+    return [self initWithColors:@{
+        [UIColor redColor]: NSLocalizedStringFromTable(@"Red", nil, nil),
+        [UIColor greenColor]: NSLocalizedStringFromTable(@"Green", nil, nil),
+        [UIColor blueColor]: NSLocalizedStringFromTable(@"Blue", nil, nil)
+    }];
+}
+
 - (id)initWithColors:(NSDictionary *)colors;
 {
     self = [super init];
