@@ -115,6 +115,7 @@
 		A11ACE7418400B90009D01B4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A16153731846A9CC00E31CC5 /* Localizations */,
 				A11ACEB318400DD4009D01B4 /* KPAColorFormatter-Prefix.pch */,
 			);
 			name = "Supporting Files";
@@ -150,6 +151,23 @@
 			);
 			path = Classes;
 			sourceTree = "<group>";
+		};
+		A16153731846A9CC00E31CC5 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				A16153741846A9E900E31CC5 /* en.lproj */,
+			);
+			name = Localizations;
+			sourceTree = "<group>";
+		};
+		A16153741846A9E900E31CC5 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A16153791846ABFA00E31CC5 /* Localizable.strings */,
+			);
+			name = en.lproj;
+			path = Localizations/en.lproj;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -302,6 +320,14 @@
 				A11ACEA318400BA7009D01B4 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A16153791846ABFA00E31CC5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A161537A1846ABFA00E31CC5 /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
