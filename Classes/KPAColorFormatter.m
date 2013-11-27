@@ -31,7 +31,7 @@
         name = [self.colors objectForKey:[self colorClosestToColor:value]];
     }
 
-    return name;
+    return [self localizedColorNameForEnglishName:name];
 }
 
 - (UIColor *)colorClosestToColor:(UIColor *)color;
@@ -55,6 +55,14 @@
     }];
 
     return closestColor;
+}
+
+- (NSString *)localizedColorNameForEnglishName:(NSString *)name;
+{
+    NSString *languageCode = [self.locale objectForKey:NSLocaleLanguageCode];
+    NSURL *bundleURL = [[NSBundle bundleForClass:self.class] URLForResource:languageCode withExtension:@"lproj"];
+    NSBundle *languageBundle = [NSBundle bundleWithURL:bundleURL];
+    return [languageBundle localizedStringForKey:name value:name table:nil];
 }
 
 - (BOOL)getObjectValue:(out __autoreleasing id *)obj forString:(NSString *)string errorDescription:(out NSString *__autoreleasing *)error;

@@ -54,6 +54,11 @@ describe(@"KPAColorFormatter", ^{
         UIColor *color = nil;
         [_formatter getObjectValue:&color forString:@"Space Gray" errorDescription:nil];
     });
+
+    it(@"can format colors using a different locale", ^{
+        _formatter.locale = [NSLocale localeWithLocaleIdentifier:@"nl-NL"];
+        expect([_formatter stringForObjectValue:[UIColor blueColor]]).to.equal(@"Blauw");
+    });
 });
 
 SpecEnd

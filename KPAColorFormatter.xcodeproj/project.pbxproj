@@ -16,6 +16,8 @@
 		A11ACEA418400BA7009D01B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A11ACEA218400BA7009D01B4 /* InfoPlist.strings */; };
 		A11ACEB618400DF9009D01B4 /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
 		A11ACEB818400E02009D01B4 /* KPAColorFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB718400E02009D01B4 /* KPAColorFormatterSpec.m */; };
+		A16153781846ABF200E31CC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16153761846ABF200E31CC5 /* Localizable.strings */; };
+		A161537B1846ABFA00E31CC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16153791846ABFA00E31CC5 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		A11ACEB418400DF9009D01B4 /* KPAColorFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAColorFormatter.h; sourceTree = "<group>"; };
 		A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatter.m; sourceTree = "<group>"; };
 		A11ACEB718400E02009D01B4 /* KPAColorFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatterSpec.m; sourceTree = "<group>"; };
+		A16153771846ABF200E31CC5 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = Localizable.strings; sourceTree = "<group>"; };
+		A161537A1846ABFA00E31CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				A16153741846A9E900E31CC5 /* en.lproj */,
+				A16153751846ABF200E31CC5 /* nl.lproj */,
 			);
 			name = Localizations;
 			sourceTree = "<group>";
@@ -167,6 +172,15 @@
 			);
 			name = en.lproj;
 			path = Localizations/en.lproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		A16153751846ABF200E31CC5 /* nl.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				A16153761846ABF200E31CC5 /* Localizable.strings */,
+			);
+			name = nl.lproj;
+			path = Localizations/nl.lproj;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -229,6 +243,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				nl,
 			);
 			mainGroup = A11ACE6518400B90009D01B4;
 			productRefGroup = A11ACE6F18400B90009D01B4 /* Products */;
@@ -247,6 +262,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A11ACEA418400BA7009D01B4 /* InfoPlist.strings in Resources */,
+				A161537B1846ABFA00E31CC5 /* Localizable.strings in Resources */,
+				A16153781846ABF200E31CC5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +337,14 @@
 				A11ACEA318400BA7009D01B4 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A16153761846ABF200E31CC5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A16153771846ABF200E31CC5 /* nl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 		A16153791846ABFA00E31CC5 /* Localizable.strings */ = {
