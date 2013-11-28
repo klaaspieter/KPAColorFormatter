@@ -1,0 +1,14 @@
+PODS:
+  - KPAColorFormatter (0.0.1)
+
+DEPENDENCIES:
+  - KPAColorFormatter (from `../../`)
+
+EXTERNAL SOURCES:
+  KPAColorFormatter:
+    :path: ../../
+
+SPEC CHECKSUMS:
+  KPAColorFormatter: 5f20a40833201ead6254494a68487867c9d06395
+
+COCOAPODS: 0.28.0
