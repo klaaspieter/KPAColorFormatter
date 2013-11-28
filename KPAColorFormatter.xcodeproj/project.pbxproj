@@ -13,11 +13,19 @@
 		A11ACE9C18400BA7009D01B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7F18400B90009D01B4 /* XCTest.framework */; };
 		A11ACE9D18400BA7009D01B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7118400B90009D01B4 /* Foundation.framework */; };
 		A11ACE9E18400BA7009D01B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE8218400B90009D01B4 /* UIKit.framework */; };
-		A11ACEA418400BA7009D01B4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A11ACEA218400BA7009D01B4 /* InfoPlist.strings */; };
 		A11ACEB618400DF9009D01B4 /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
-		A11ACEB818400E02009D01B4 /* KPAColorFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB718400E02009D01B4 /* KPAColorFormatterSpec.m */; };
 		A16153781846ABF200E31CC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16153761846ABF200E31CC5 /* Localizable.strings */; };
 		A161537B1846ABFA00E31CC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16153791846ABFA00E31CC5 /* Localizable.strings */; };
+		A18E1CEF1847950800622253 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18E1CEE1847950800622253 /* Cocoa.framework */; };
+		A18E1CFF1847950900622253 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7F18400B90009D01B4 /* XCTest.framework */; };
+		A18E1D001847950900622253 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18E1CEE1847950800622253 /* Cocoa.framework */; };
+		A18E1D031847950900622253 /* libKPAColorFormatter-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A18E1CED1847950800622253 /* libKPAColorFormatter-mac.a */; };
+		A18E1D201847958300622253 /* KPAColorFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E1D151847955000622253 /* KPAColorFormatterSpec.m */; };
+		A18E1D221847958D00622253 /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
+		A18E1D231847958D00622253 /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
+		A18E1D291847960500622253 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18E1D251847960500622253 /* InfoPlist.strings */; };
+		A18E1D2A1847960500622253 /* KPAColorFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E1D271847960500622253 /* KPAColorFormatterSpec.m */; };
+		A18E1D2B1847960500622253 /* Specs-osx-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A18E1D281847960500622253 /* Specs-osx-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +35,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A11ACE6D18400B90009D01B4;
 			remoteInfo = KPAColorFormatter;
+		};
+		A18E1D011847950900622253 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A11ACE6618400B90009D01B4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A18E1CEC1847950800622253;
+			remoteInfo = "KPAColorFormatter-mac";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -49,17 +64,26 @@
 		A11ACE7118400B90009D01B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A11ACE7F18400B90009D01B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A11ACE8218400B90009D01B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		A11ACE9B18400BA7009D01B4 /* Specs.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Specs.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A11ACEA118400BA7009D01B4 /* Specs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-Info.plist"; sourceTree = "<group>"; };
-		A11ACEA318400BA7009D01B4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A11ACEA718400BA7009D01B4 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
-		A11ACEAD18400C88009D01B4 /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
+		A11ACE9B18400BA7009D01B4 /* Specs-ios.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Specs-ios.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11ACEB318400DD4009D01B4 /* KPAColorFormatter-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "KPAColorFormatter-Prefix.pch"; path = "Classes/KPAColorFormatter-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		A11ACEB418400DF9009D01B4 /* KPAColorFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KPAColorFormatter.h; sourceTree = "<group>"; };
 		A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatter.m; sourceTree = "<group>"; };
-		A11ACEB718400E02009D01B4 /* KPAColorFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatterSpec.m; sourceTree = "<group>"; };
 		A16153771846ABF200E31CC5 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = Localizable.strings; sourceTree = "<group>"; };
 		A161537A1846ABFA00E31CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		A18E1CED1847950800622253 /* libKPAColorFormatter-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKPAColorFormatter-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18E1CEE1847950800622253 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		A18E1CF11847950900622253 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A18E1CF21847950900622253 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A18E1CF31847950900622253 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A18E1CFE1847950900622253 /* Specs-osx.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Specs-osx.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18E1D141847955000622253 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A18E1D151847955000622253 /* KPAColorFormatterSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatterSpec.m; sourceTree = "<group>"; };
+		A18E1D161847955000622253 /* SpecHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecHelper.h; sourceTree = "<group>"; };
+		A18E1D171847955000622253 /* Specs-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Specs-ios-Info.plist"; sourceTree = "<group>"; };
+		A18E1D181847955000622253 /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		A18E1D261847960500622253 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A18E1D271847960500622253 /* KPAColorFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatterSpec.m; sourceTree = "<group>"; };
+		A18E1D281847960500622253 /* Specs-osx-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-osx-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +106,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A18E1CEA1847950800622253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18E1CEF1847950800622253 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18E1CFB1847950900622253 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18E1D031847950900622253 /* libKPAColorFormatter-mac.a in Frameworks */,
+				A18E1D001847950900622253 /* Cocoa.framework in Frameworks */,
+				A18E1CFF1847950900622253 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,7 +131,8 @@
 			isa = PBXGroup;
 			children = (
 				A11ACEB118400DB1009D01B4 /* Classes */,
-				A11ACE9F18400BA7009D01B4 /* Specs */,
+				A18E1D121847955000622253 /* Specs-ios */,
+				A18E1D241847960500622253 /* Specs-osx */,
 				A11ACE7018400B90009D01B4 /* Frameworks */,
 				A11ACE6F18400B90009D01B4 /* Products */,
 				296A7A3F73D348D2968B1B01 /* Pods-Specs.xcconfig */,
@@ -100,7 +143,9 @@
 			isa = PBXGroup;
 			children = (
 				A11ACE6E18400B90009D01B4 /* libKPAColorFormatter.a */,
-				A11ACE9B18400BA7009D01B4 /* Specs.xctest */,
+				A11ACE9B18400BA7009D01B4 /* Specs-ios.xctest */,
+				A18E1CED1847950800622253 /* libKPAColorFormatter-mac.a */,
+				A18E1CFE1847950900622253 /* Specs-osx.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +157,8 @@
 				A11ACE7F18400B90009D01B4 /* XCTest.framework */,
 				A11ACE8218400B90009D01B4 /* UIKit.framework */,
 				3887EA99AF4C49AAA756191F /* libPods-Specs.a */,
+				A18E1CEE1847950800622253 /* Cocoa.framework */,
+				A18E1CF01847950900622253 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,26 +171,6 @@
 			);
 			name = "Supporting Files";
 			path = ../KPAColorFormatter;
-			sourceTree = "<group>";
-		};
-		A11ACE9F18400BA7009D01B4 /* Specs */ = {
-			isa = PBXGroup;
-			children = (
-				A11ACEA018400BA7009D01B4 /* Supporting Files */,
-				A11ACEB718400E02009D01B4 /* KPAColorFormatterSpec.m */,
-			);
-			path = Specs;
-			sourceTree = "<group>";
-		};
-		A11ACEA018400BA7009D01B4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A11ACEA118400BA7009D01B4 /* Specs-Info.plist */,
-				A11ACEA218400BA7009D01B4 /* InfoPlist.strings */,
-				A11ACEA718400BA7009D01B4 /* Specs-Prefix.pch */,
-				A11ACEAD18400C88009D01B4 /* SpecHelper.h */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A11ACEB118400DB1009D01B4 /* Classes */ = {
@@ -183,12 +210,70 @@
 			path = Localizations/nl.lproj;
 			sourceTree = SOURCE_ROOT;
 		};
+		A18E1CF01847950900622253 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A18E1CF11847950900622253 /* Foundation.framework */,
+				A18E1CF21847950900622253 /* CoreData.framework */,
+				A18E1CF31847950900622253 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A18E1D121847955000622253 /* Specs-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A18E1D1E1847956200622253 /* Supporting Files */,
+				A18E1D151847955000622253 /* KPAColorFormatterSpec.m */,
+			);
+			path = "Specs-ios";
+			sourceTree = SOURCE_ROOT;
+		};
+		A18E1D1E1847956200622253 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A18E1D131847955000622253 /* InfoPlist.strings */,
+				A18E1D161847955000622253 /* SpecHelper.h */,
+				A18E1D171847955000622253 /* Specs-ios-Info.plist */,
+				A18E1D181847955000622253 /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A18E1D241847960500622253 /* Specs-osx */ = {
+			isa = PBXGroup;
+			children = (
+				A18E1D2C1847960A00622253 /* Supporting Files */,
+				A18E1D271847960500622253 /* KPAColorFormatterSpec.m */,
+			);
+			path = "Specs-osx";
+			sourceTree = "<group>";
+		};
+		A18E1D2C1847960A00622253 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A18E1D251847960500622253 /* InfoPlist.strings */,
+				A18E1D281847960500622253 /* Specs-osx-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		A18E1CEB1847950800622253 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		A11ACE6D18400B90009D01B4 /* KPAColorFormatter */ = {
+		A11ACE6D18400B90009D01B4 /* KPAColorFormatter-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A11ACE9118400B90009D01B4 /* Build configuration list for PBXNativeTarget "KPAColorFormatter" */;
+			buildConfigurationList = A11ACE9118400B90009D01B4 /* Build configuration list for PBXNativeTarget "KPAColorFormatter-ios" */;
 			buildPhases = (
 				A11ACE6A18400B90009D01B4 /* Sources */,
 				A11ACE6B18400B90009D01B4 /* Frameworks */,
@@ -198,14 +283,14 @@
 			);
 			dependencies = (
 			);
-			name = KPAColorFormatter;
+			name = "KPAColorFormatter-ios";
 			productName = KPAColorFormatter;
 			productReference = A11ACE6E18400B90009D01B4 /* libKPAColorFormatter.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A11ACE9A18400BA7009D01B4 /* Specs */ = {
+		A11ACE9A18400BA7009D01B4 /* Specs-ios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A11ACEAA18400BA7009D01B4 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildConfigurationList = A11ACEAA18400BA7009D01B4 /* Build configuration list for PBXNativeTarget "Specs-ios" */;
 			buildPhases = (
 				BD547C537B154B51985FE2F0 /* Check Pods Manifest.lock */,
 				A11ACE9718400BA7009D01B4 /* Sources */,
@@ -218,9 +303,44 @@
 			dependencies = (
 				A11ACEA918400BA7009D01B4 /* PBXTargetDependency */,
 			);
-			name = Specs;
+			name = "Specs-ios";
 			productName = Specs;
-			productReference = A11ACE9B18400BA7009D01B4 /* Specs.xctest */;
+			productReference = A11ACE9B18400BA7009D01B4 /* Specs-ios.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A18E1CEC1847950800622253 /* KPAColorFormatter-mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18E1D101847950900622253 /* Build configuration list for PBXNativeTarget "KPAColorFormatter-mac" */;
+			buildPhases = (
+				A18E1CE91847950800622253 /* Sources */,
+				A18E1CEA1847950800622253 /* Frameworks */,
+				A18E1CEB1847950800622253 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KPAColorFormatter-mac";
+			productName = "KPAColorFormatter-mac";
+			productReference = A18E1CED1847950800622253 /* libKPAColorFormatter-mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A18E1CFD1847950900622253 /* Specs-osx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A18E1D111847950900622253 /* Build configuration list for PBXNativeTarget "Specs-osx" */;
+			buildPhases = (
+				A18E1CFA1847950900622253 /* Sources */,
+				A18E1CFB1847950900622253 /* Frameworks */,
+				A18E1CFC1847950900622253 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A18E1D021847950900622253 /* PBXTargetDependency */,
+			);
+			name = "Specs-osx";
+			productName = "KPAColorFormatter-macTests";
+			productReference = A18E1CFE1847950900622253 /* Specs-osx.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -250,8 +370,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A11ACE6D18400B90009D01B4 /* KPAColorFormatter */,
-				A11ACE9A18400BA7009D01B4 /* Specs */,
+				A11ACE6D18400B90009D01B4 /* KPAColorFormatter-ios */,
+				A11ACE9A18400BA7009D01B4 /* Specs-ios */,
+				A18E1CEC1847950800622253 /* KPAColorFormatter-mac */,
+				A18E1CFD1847950900622253 /* Specs-osx */,
 			);
 		};
 /* End PBXProject section */
@@ -261,9 +383,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11ACEA418400BA7009D01B4 /* InfoPlist.strings in Resources */,
 				A161537B1846ABFA00E31CC5 /* Localizable.strings in Resources */,
 				A16153781846ABF200E31CC5 /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18E1CFC1847950900622253 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18E1D2B1847960500622253 /* Specs-osx-Info.plist in Resources */,
+				A18E1D291847960500622253 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,8 +445,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A11ACEB818400E02009D01B4 /* KPAColorFormatterSpec.m in Sources */,
+				A18E1D201847958300622253 /* KPAColorFormatterSpec.m in Sources */,
 				A108247D1843FE460016FABD /* KPAColorFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18E1CE91847950800622253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18E1D221847958D00622253 /* KPAColorFormatter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18E1CFA1847950900622253 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A18E1D2A1847960500622253 /* KPAColorFormatterSpec.m in Sources */,
+				A18E1D231847958D00622253 /* KPAColorFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,20 +472,17 @@
 /* Begin PBXTargetDependency section */
 		A11ACEA918400BA7009D01B4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A11ACE6D18400B90009D01B4 /* KPAColorFormatter */;
+			target = A11ACE6D18400B90009D01B4 /* KPAColorFormatter-ios */;
 			targetProxy = A11ACEA818400BA7009D01B4 /* PBXContainerItemProxy */;
+		};
+		A18E1D021847950900622253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A18E1CEC1847950800622253 /* KPAColorFormatter-mac */;
+			targetProxy = A18E1D011847950900622253 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A11ACEA218400BA7009D01B4 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A11ACEA318400BA7009D01B4 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		A16153761846ABF200E31CC5 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,6 +497,22 @@
 				A161537A1846ABFA00E31CC5 /* en */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		A18E1D131847955000622253 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A18E1D141847955000622253 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A18E1D251847960500622253 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A18E1D261847960500622253 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -462,13 +622,12 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs-ios/Specs-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				INFOPLIST_FILE = "Specs-ios/Specs-ios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -484,10 +643,89 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
-				INFOPLIST_FILE = "Specs/Specs-Info.plist";
+				GCC_PREFIX_HEADER = "Specs-ios/Specs-Prefix.pch";
+				INFOPLIST_FILE = "Specs-ios/Specs-ios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		A18E1D0C1847950900622253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/KPAColorFormatter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A18E1D0D1847950900622253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Classes/KPAColorFormatter-Prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A18E1D0E1847950900622253 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KPAColorFormatter-mac/KPAColorFormatter-mac-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Specs-osx/Specs-osx-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A18E1D0F1847950900622253 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KPAColorFormatter-mac/KPAColorFormatter-mac-Prefix.pch";
+				INFOPLIST_FILE = "Specs-osx/Specs-osx-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -504,7 +742,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A11ACE9118400B90009D01B4 /* Build configuration list for PBXNativeTarget "KPAColorFormatter" */ = {
+		A11ACE9118400B90009D01B4 /* Build configuration list for PBXNativeTarget "KPAColorFormatter-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A11ACE9218400B90009D01B4 /* Debug */,
@@ -513,7 +751,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A11ACEAA18400BA7009D01B4 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+		A11ACEAA18400BA7009D01B4 /* Build configuration list for PBXNativeTarget "Specs-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A11ACEAB18400BA7009D01B4 /* Debug */,
@@ -521,6 +759,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		A18E1D101847950900622253 /* Build configuration list for PBXNativeTarget "KPAColorFormatter-mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18E1D0C1847950900622253 /* Debug */,
+				A18E1D0D1847950900622253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A18E1D111847950900622253 /* Build configuration list for PBXNativeTarget "Specs-osx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A18E1D0E1847950900622253 /* Debug */,
+				A18E1D0F1847950900622253 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
