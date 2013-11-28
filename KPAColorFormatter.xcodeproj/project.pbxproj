@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB0AEB5F68B4740A8EC1D96 /* libPods-Specs-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45EE60B78D964F03B54233CD /* libPods-Specs-ios.a */; };
 		4012258D9F344785AEC0E949 /* libPods-Specs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3887EA99AF4C49AAA756191F /* libPods-Specs.a */; };
+		479973DC77CB4E5BBB70C534 /* libPods-Specs-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BE4BF4921C5443AA09B9593 /* libPods-Specs-osx.a */; };
 		A108247D1843FE460016FABD /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
 		A11ACE7218400B90009D01B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7118400B90009D01B4 /* Foundation.framework */; };
 		A11ACE9C18400BA7009D01B4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7F18400B90009D01B4 /* XCTest.framework */; };
 		A11ACE9D18400BA7009D01B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7118400B90009D01B4 /* Foundation.framework */; };
 		A11ACE9E18400BA7009D01B4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE8218400B90009D01B4 /* UIKit.framework */; };
 		A11ACEB618400DF9009D01B4 /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
-		A16153781846ABF200E31CC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16153761846ABF200E31CC5 /* Localizable.strings */; };
 		A161537B1846ABFA00E31CC5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A16153791846ABFA00E31CC5 /* Localizable.strings */; };
 		A18E1CEF1847950800622253 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18E1CEE1847950800622253 /* Cocoa.framework */; };
 		A18E1CFF1847950900622253 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A11ACE7F18400B90009D01B4 /* XCTest.framework */; };
 		A18E1D001847950900622253 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A18E1CEE1847950800622253 /* Cocoa.framework */; };
-		A18E1D031847950900622253 /* libKPAColorFormatter-mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A18E1CED1847950800622253 /* libKPAColorFormatter-mac.a */; };
+		A18E1D031847950900622253 /* libKPAColorFormatter-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A18E1CED1847950800622253 /* libKPAColorFormatter-osx.a */; };
 		A18E1D201847958300622253 /* KPAColorFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E1D151847955000622253 /* KPAColorFormatterSpec.m */; };
 		A18E1D221847958D00622253 /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
 		A18E1D231847958D00622253 /* KPAColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */; };
 		A18E1D291847960500622253 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A18E1D251847960500622253 /* InfoPlist.strings */; };
 		A18E1D2A1847960500622253 /* KPAColorFormatterSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = A18E1D271847960500622253 /* KPAColorFormatterSpec.m */; };
-		A18E1D2B1847960500622253 /* Specs-osx-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A18E1D281847960500622253 /* Specs-osx-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +60,9 @@
 /* Begin PBXFileReference section */
 		296A7A3F73D348D2968B1B01 /* Pods-Specs.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs.xcconfig"; path = "Pods/Pods-Specs.xcconfig"; sourceTree = "<group>"; };
 		3887EA99AF4C49AAA756191F /* libPods-Specs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A11ACE6E18400B90009D01B4 /* libKPAColorFormatter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKPAColorFormatter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BE4BF4921C5443AA09B9593 /* libPods-Specs-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		45EE60B78D964F03B54233CD /* libPods-Specs-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Specs-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11ACE6E18400B90009D01B4 /* libKPAColorFormatter-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKPAColorFormatter-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A11ACE7118400B90009D01B4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A11ACE7F18400B90009D01B4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A11ACE8218400B90009D01B4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -70,7 +72,7 @@
 		A11ACEB518400DF9009D01B4 /* KPAColorFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatter.m; sourceTree = "<group>"; };
 		A16153771846ABF200E31CC5 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = Localizable.strings; sourceTree = "<group>"; };
 		A161537A1846ABFA00E31CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
-		A18E1CED1847950800622253 /* libKPAColorFormatter-mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKPAColorFormatter-mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A18E1CED1847950800622253 /* libKPAColorFormatter-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libKPAColorFormatter-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18E1CEE1847950800622253 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		A18E1CF11847950900622253 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A18E1CF21847950900622253 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -84,6 +86,9 @@
 		A18E1D261847960500622253 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A18E1D271847960500622253 /* KPAColorFormatterSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KPAColorFormatterSpec.m; sourceTree = "<group>"; };
 		A18E1D281847960500622253 /* Specs-osx-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Specs-osx-Info.plist"; sourceTree = "<group>"; };
+		A18E1D2D18479B1200622253 /* Specs-osx-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-osx-Prefix.pch"; sourceTree = "<group>"; };
+		DEAD5BA998234CD5AF4EC4C3 /* Pods-Specs-ios.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs-ios.xcconfig"; path = "Pods/Pods-Specs-ios.xcconfig"; sourceTree = "<group>"; };
+		FBFFD5A1FD6142D99CF617A5 /* Pods-Specs-osx.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Specs-osx.xcconfig"; path = "Pods/Pods-Specs-osx.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +108,7 @@
 				A11ACE9E18400BA7009D01B4 /* UIKit.framework in Frameworks */,
 				A11ACE9D18400BA7009D01B4 /* Foundation.framework in Frameworks */,
 				4012258D9F344785AEC0E949 /* libPods-Specs.a in Frameworks */,
+				1FB0AEB5F68B4740A8EC1D96 /* libPods-Specs-ios.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,9 +124,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A18E1D031847950900622253 /* libKPAColorFormatter-mac.a in Frameworks */,
+				A18E1D031847950900622253 /* libKPAColorFormatter-osx.a in Frameworks */,
 				A18E1D001847950900622253 /* Cocoa.framework in Frameworks */,
 				A18E1CFF1847950900622253 /* XCTest.framework in Frameworks */,
+				479973DC77CB4E5BBB70C534 /* libPods-Specs-osx.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,15 +143,17 @@
 				A11ACE7018400B90009D01B4 /* Frameworks */,
 				A11ACE6F18400B90009D01B4 /* Products */,
 				296A7A3F73D348D2968B1B01 /* Pods-Specs.xcconfig */,
+				DEAD5BA998234CD5AF4EC4C3 /* Pods-Specs-ios.xcconfig */,
+				FBFFD5A1FD6142D99CF617A5 /* Pods-Specs-osx.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
 		A11ACE6F18400B90009D01B4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A11ACE6E18400B90009D01B4 /* libKPAColorFormatter.a */,
+				A11ACE6E18400B90009D01B4 /* libKPAColorFormatter-ios.a */,
 				A11ACE9B18400BA7009D01B4 /* Specs-ios.xctest */,
-				A18E1CED1847950800622253 /* libKPAColorFormatter-mac.a */,
+				A18E1CED1847950800622253 /* libKPAColorFormatter-osx.a */,
 				A18E1CFE1847950900622253 /* Specs-osx.xctest */,
 			);
 			name = Products;
@@ -159,6 +168,8 @@
 				3887EA99AF4C49AAA756191F /* libPods-Specs.a */,
 				A18E1CEE1847950800622253 /* Cocoa.framework */,
 				A18E1CF01847950900622253 /* Other Frameworks */,
+				45EE60B78D964F03B54233CD /* libPods-Specs-ios.a */,
+				3BE4BF4921C5443AA09B9593 /* libPods-Specs-osx.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -254,6 +265,7 @@
 			children = (
 				A18E1D251847960500622253 /* InfoPlist.strings */,
 				A18E1D281847960500622253 /* Specs-osx-Info.plist */,
+				A18E1D2D18479B1200622253 /* Specs-osx-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -285,7 +297,7 @@
 			);
 			name = "KPAColorFormatter-ios";
 			productName = KPAColorFormatter;
-			productReference = A11ACE6E18400B90009D01B4 /* libKPAColorFormatter.a */;
+			productReference = A11ACE6E18400B90009D01B4 /* libKPAColorFormatter-ios.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A11ACE9A18400BA7009D01B4 /* Specs-ios */ = {
@@ -308,9 +320,9 @@
 			productReference = A11ACE9B18400BA7009D01B4 /* Specs-ios.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A18E1CEC1847950800622253 /* KPAColorFormatter-mac */ = {
+		A18E1CEC1847950800622253 /* KPAColorFormatter-osx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A18E1D101847950900622253 /* Build configuration list for PBXNativeTarget "KPAColorFormatter-mac" */;
+			buildConfigurationList = A18E1D101847950900622253 /* Build configuration list for PBXNativeTarget "KPAColorFormatter-osx" */;
 			buildPhases = (
 				A18E1CE91847950800622253 /* Sources */,
 				A18E1CEA1847950800622253 /* Frameworks */,
@@ -320,18 +332,20 @@
 			);
 			dependencies = (
 			);
-			name = "KPAColorFormatter-mac";
+			name = "KPAColorFormatter-osx";
 			productName = "KPAColorFormatter-mac";
-			productReference = A18E1CED1847950800622253 /* libKPAColorFormatter-mac.a */;
+			productReference = A18E1CED1847950800622253 /* libKPAColorFormatter-osx.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A18E1CFD1847950900622253 /* Specs-osx */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A18E1D111847950900622253 /* Build configuration list for PBXNativeTarget "Specs-osx" */;
 			buildPhases = (
+				3EB9A084DFBE46AD82CB5E37 /* Check Pods Manifest.lock */,
 				A18E1CFA1847950900622253 /* Sources */,
 				A18E1CFB1847950900622253 /* Frameworks */,
 				A18E1CFC1847950900622253 /* Resources */,
+				137020614D124E00A253050B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -372,7 +386,7 @@
 			targets = (
 				A11ACE6D18400B90009D01B4 /* KPAColorFormatter-ios */,
 				A11ACE9A18400BA7009D01B4 /* Specs-ios */,
-				A18E1CEC1847950800622253 /* KPAColorFormatter-mac */,
+				A18E1CEC1847950800622253 /* KPAColorFormatter-osx */,
 				A18E1CFD1847950900622253 /* Specs-osx */,
 			);
 		};
@@ -384,7 +398,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A161537B1846ABFA00E31CC5 /* Localizable.strings in Resources */,
-				A16153781846ABF200E31CC5 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +405,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A18E1D2B1847960500622253 /* Specs-osx-Info.plist in Resources */,
 				A18E1D291847960500622253 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +412,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		137020614D124E00A253050B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-Specs-osx-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EB9A084DFBE46AD82CB5E37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		B46248C5B4E54DF48C05E809 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -412,7 +454,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Specs-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Pods-Specs-ios-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD547C537B154B51985FE2F0 /* Check Pods Manifest.lock */ = {
@@ -477,7 +519,7 @@
 		};
 		A18E1D021847950900622253 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A18E1CEC1847950800622253 /* KPAColorFormatter-mac */;
+			target = A18E1CEC1847950800622253 /* KPAColorFormatter-osx */;
 			targetProxy = A18E1D011847950900622253 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -614,7 +656,7 @@
 		};
 		A11ACEAB18400BA7009D01B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 296A7A3F73D348D2968B1B01 /* Pods-Specs.xcconfig */;
+			baseConfigurationReference = DEAD5BA998234CD5AF4EC4C3 /* Pods-Specs-ios.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -622,7 +664,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PREFIX_HEADER = "Specs-ios/Specs-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs-ios/Specs-ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -635,7 +677,7 @@
 		};
 		A11ACEAC18400BA7009D01B4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 296A7A3F73D348D2968B1B01 /* Pods-Specs.xcconfig */;
+			baseConfigurationReference = DEAD5BA998234CD5AF4EC4C3 /* Pods-Specs-ios.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -643,7 +685,7 @@
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 				);
-				GCC_PREFIX_HEADER = "Specs-ios/Specs-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs-ios/Specs-ios-Prefix.pch";
 				INFOPLIST_FILE = "Specs-ios/Specs-ios-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = xctest;
@@ -689,6 +731,7 @@
 		};
 		A18E1D0E1847950900622253 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFFD5A1FD6142D99CF617A5 /* Pods-Specs-osx.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -697,7 +740,7 @@
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KPAColorFormatter-mac/KPAColorFormatter-mac-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs-osx/Specs-osx-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -712,6 +755,7 @@
 		};
 		A18E1D0F1847950900622253 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFFD5A1FD6142D99CF617A5 /* Pods-Specs-osx.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -721,7 +765,7 @@
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "KPAColorFormatter-mac/KPAColorFormatter-mac-Prefix.pch";
+				GCC_PREFIX_HEADER = "Specs-osx/Specs-osx-Prefix.pch";
 				INFOPLIST_FILE = "Specs-osx/Specs-osx-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -760,13 +804,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A18E1D101847950900622253 /* Build configuration list for PBXNativeTarget "KPAColorFormatter-mac" */ = {
+		A18E1D101847950900622253 /* Build configuration list for PBXNativeTarget "KPAColorFormatter-osx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A18E1D0C1847950900622253 /* Debug */,
 				A18E1D0D1847950900622253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A18E1D111847950900622253 /* Build configuration list for PBXNativeTarget "Specs-osx" */ = {
 			isa = XCConfigurationList;
@@ -775,6 +820,7 @@
 				A18E1D0F1847950900622253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

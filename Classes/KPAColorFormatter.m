@@ -8,14 +8,27 @@
 
 #import "KPAColorFormatter.h"
 
+#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
+#define KPAColorClass UIColor
+#else
+#define KPAColorClass NSColor
+#endif
+
 @implementation KPAColorFormatter
+
++ (void)initialize;
+{
+    if (self != [KPAColorFormatter class]) {
+        return;
+    }
+}
 
 - (id)init;
 {
     return [self initWithColors:@{
-        [UIColor redColor]: NSLocalizedStringFromTable(@"Red", nil, nil),
-        [UIColor greenColor]: NSLocalizedStringFromTable(@"Green", nil, nil),
-        [UIColor blueColor]: NSLocalizedStringFromTable(@"Blue", nil, nil)
+        [KPAColorClass redColor]: NSLocalizedStringFromTable(@"Red", nil, nil),
+        [KPAColorClass greenColor]: NSLocalizedStringFromTable(@"Green", nil, nil),
+        [KPAColorClass blueColor]: NSLocalizedStringFromTable(@"Blue", nil, nil)
     }];
 }
 
@@ -31,7 +44,7 @@
 
 - (NSString *)stringForObjectValue:(id)value;
 {
-    if (![value isKindOfClass:[UIColor class]]) {
+    if (![value isKindOfClass:[KPAColorClass class]]) {
         return nil;
     }
 
@@ -43,14 +56,14 @@
     return [self localizedColorNameForEnglishName:name];
 }
 
-- (UIColor *)colorClosestToColor:(UIColor *)color;
+- (KPAColorClass *)colorClosestToColor:(KPAColorClass *)color;
 {
     CGFloat red1, green1, blue1;
     [color getRed:&red1 green:&green1 blue:&blue1 alpha:nil];
 
     __block CGFloat closestDelta = CGFLOAT_MAX;
-    __block UIColor *closestColor = nil;
-    [[self.colors allKeys] enumerateObjectsUsingBlock:^(UIColor *possibleColor, NSUInteger idx, BOOL *stop) {
+    __block KPAColorClass *closestColor = nil;
+    [[self.colors allKeys] enumerateObjectsUsingBlock:^(KPAColorClass *possibleColor, NSUInteger idx, BOOL *stop) {
         CGFloat red2, green2, blue2;
         [possibleColor getRed:&red2 green:&green2 blue:&blue2 alpha:nil];
         CGFloat deltaR = pow(red2 - red1, 2);
@@ -76,8 +89,8 @@
 
 - (BOOL)getObjectValue:(out __autoreleasing id *)obj forString:(NSString *)string errorDescription:(out NSString *__autoreleasing *)error;
 {
-    __block UIColor *matchingColor = nil;
-    [self.colors enumerateKeysAndObjectsUsingBlock:^(UIColor *color, NSString *name, BOOL *stop) {
+    __block KPAColorClass *matchingColor = nil;
+    [self.colors enumerateKeysAndObjectsUsingBlock:^(KPAColorClass *color, NSString *name, BOOL *stop) {
         if([name isEqualToString:string]) {
             matchingColor = color;
             *stop = YES;
