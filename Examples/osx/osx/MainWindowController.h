@@ -11,4 +11,8 @@
 @interface MainWindowController : NSWindowController
 @property (weak, nonatomic) IBOutlet NSTextField *rgbLabel;
 @property (weak, nonatomic) IBOutlet NSTextField *nameLabel;
+@property (weak, nonatomic) IBOutlet NSPopUpButton *languagePopup;
+
+- (IBAction)changeLanguage:(id)sender;
+
 @end
