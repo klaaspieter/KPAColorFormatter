@@ -66,6 +66,19 @@ static NSDictionary *KPAColorFormatterDefaultColors;
     return [self localizedColorNameForEnglishName:name];
 }
 
+- (NSAttributedString *)attributedStringForObjectValue:(id)value withDefaultAttributes:(NSDictionary *)defaultAttributes;
+{
+    NSString *string = [self stringForObjectValue:value];
+
+    if  (!string) {
+        return nil;
+    }
+
+    NSMutableDictionary *attributes = [NSMutableDictionary dictionaryWithDictionary:defaultAttributes];
+    attributes[NSForegroundColorAttributeName] = value;
+    return [[NSAttributedString alloc] initWithString:string attributes:attributes];
+}
+
 - (KPAColorClass *)colorClosestToColor:(KPAColorClass *)color;
 {
     CGFloat red1, green1, blue1;

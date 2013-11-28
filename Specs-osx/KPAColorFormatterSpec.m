@@ -66,6 +66,17 @@ describe(@"KPAColorFormatter", ^{
         _formatter.locale = [NSLocale localeWithLocaleIdentifier:@"nl-NL"];
         expect([_formatter stringForObjectValue:[NSColor blueColor]]).to.equal(@"Blauw");
     });
+
+
+    it(@"can format colors to attributed strings", ^{
+        NSAttributedString *attributedString = [_formatter attributedStringForObjectValue:[NSColor redColor] withDefaultAttributes:nil];
+        expect([attributedString attributesAtIndex:0 effectiveRange:NULL]).to.contain(@{NSForegroundColorAttributeName: [NSColor redColor]});
+    });
+
+    it(@"retains the default attributes when formatting to attributed strings", ^{
+        NSAttributedString *attributedString = [_formatter attributedStringForObjectValue:[NSColor redColor] withDefaultAttributes:@{NSBackgroundColorAttributeName: [NSColor blackColor]}];
+        expect([attributedString attributesAtIndex:0 effectiveRange:NULL]).to.contain(@{NSBackgroundColorAttributeName: [NSColor blackColor]});
+    });
 });
 
 SpecEnd
