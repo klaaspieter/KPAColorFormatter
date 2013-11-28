@@ -14,6 +14,9 @@
 #define KPAColorClass NSColor
 #endif
 
+
+static NSDictionary *KPAColorFormatterDefaultColors;
+
 @implementation KPAColorFormatter
 
 + (void)initialize;
@@ -21,15 +24,22 @@
     if (self != [KPAColorFormatter class]) {
         return;
     }
+
+    KPAColorFormatterDefaultColors = @{
+        [KPAColorClass redColor]: NSLocalizedStringFromTable(@"Red", nil, nil),
+        [KPAColorClass greenColor]: NSLocalizedStringFromTable(@"Green", nil, nil),
+        [KPAColorClass blueColor]: NSLocalizedStringFromTable(@"Blue", nil, nil)
+    };
 }
 
 - (id)init;
 {
-    return [self initWithColors:@{
-        [KPAColorClass redColor]: NSLocalizedStringFromTable(@"Red", nil, nil),
-        [KPAColorClass greenColor]: NSLocalizedStringFromTable(@"Green", nil, nil),
-        [KPAColorClass blueColor]: NSLocalizedStringFromTable(@"Blue", nil, nil)
-    }];
+    return [self initWithColors:KPAColorFormatterDefaultColors];
+}
+
+- (void)awakeFromNib;
+{
+    self.colors = KPAColorFormatterDefaultColors;
 }
 
 - (id)initWithColors:(NSDictionary *)colors;
