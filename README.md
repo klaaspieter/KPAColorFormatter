@@ -11,3 +11,7 @@ Add the following to your [Podfile](http://docs.cocoapods.org/podfile.html):
 # Usage
 
 Use like any other NSFormatter. `stringForObjectValue:` maps colors to names and `getObjectValue:forString:errorDescription:` does the reverse.
+
+# Credits
+
+The default color names were taken from http://chir.ag/projects/ntc/
