@@ -19,11 +19,22 @@ static KPAColorFormatter *KPAColorFormatterReusableInstance;
         return;
     }
 
-    KPAColorFormatterDefaultColors = @{
-        [KPAColorClass redColor]: NSLocalizedStringFromTable(@"Red", nil, nil),
-        [KPAColorClass greenColor]: NSLocalizedStringFromTable(@"Green", nil, nil),
-        [KPAColorClass blueColor]: NSLocalizedStringFromTable(@"Blue", nil, nil)
-    };
+    NSURL *colorsURL = [[NSBundle bundleForClass:self.class] URLForResource:@"colors" withExtension:@"json"];
+    NSData *data = [NSData dataWithContentsOfURL:colorsURL];
+    NSDictionary *colorData = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+
+    NSMutableDictionary *colors = [NSMutableDictionary dictionary];
+    [colorData enumerateKeysAndObjectsUsingBlock:^(NSString *rgb, NSString *name, BOOL *stop) {
+        NSArray *components = [rgb componentsSeparatedByString:@","];
+        CGFloat red = [components[0] doubleValue];
+        CGFloat green = [components[1] doubleValue];
+        CGFloat blue = [components[2] doubleValue];
+
+        KPAColorClass *color = [KPAColorClass colorWithRed:red / 255.0 green:green / 255.0 blue:blue / 255.0 alpha:1.0];
+        colors[color] = name;
+    }];
+
+    KPAColorFormatterDefaultColors = [colors copy];
 }
 
 - (id)init;
