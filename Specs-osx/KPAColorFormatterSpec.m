@@ -28,6 +28,11 @@ describe(@"KPAColorFormatter", ^{
         expect([_formatter stringForObjectValue:[[NSObject alloc] init]]).to.beNil();
     });
 
+    it(@"has a convenience method", ^{
+        NSString *expected = [_formatter stringForObjectValue:[NSColor greenColor]];
+        expect([KPAColorFormatter localizedStringFromColor:[NSColor greenColor]]).to.equal(expected);
+    });
+
     it(@"can name exact color matches", ^{
         _formatter.locale = [NSLocale localeWithLocaleIdentifier:@"en-US"];
         expect([_formatter stringForObjectValue:[NSColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:1.0]]).to.equal(@"Blue");

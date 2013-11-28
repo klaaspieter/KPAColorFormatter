@@ -8,14 +8,8 @@
 
 #import "KPAColorFormatter.h"
 
-#if TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR
-#define KPAColorClass UIColor
-#else
-#define KPAColorClass NSColor
-#endif
-
-
 static NSDictionary *KPAColorFormatterDefaultColors;
+static KPAColorFormatter *KPAColorFormatterReusableInstance;
 
 @implementation KPAColorFormatter
 
@@ -50,6 +44,16 @@ static NSDictionary *KPAColorFormatterDefaultColors;
     }
 
     return self;
+}
+
++ (NSString *)localizedStringFromColor:(KPAColorClass *)color;
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        KPAColorFormatterReusableInstance = [[KPAColorFormatter alloc] init];
+    });
+
+    return [KPAColorFormatterReusableInstance stringForObjectValue:color];
 }
 
 - (NSString *)stringForObjectValue:(id)value;
