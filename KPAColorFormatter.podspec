@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "KPAColorFormatter"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "Format UIColor and NSColor instances to English names"
   s.homepage     = "https://github.com/klaaspieter/KPAColorFormatter"
   s.license      = "MIT"
